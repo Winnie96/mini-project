@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mini project</title>
     <link rel="stylesheet" href="style.css" />
@@ -11,20 +11,14 @@
     <!--HEADER-->
     <section>
       <nav>
-        <div class="logo">
-          <img
-            src="./assets/fes-logo.png"
-            alt="frontend simplified logo"
-            class="logo__img"
-            width="50"
-            height="50"
-            />
-          <h1 class="logo__text"><b>Frontend</b> Simplified</h1>
-        </div>
+      <div class="logo">
+        <img src="./assets/fes-logo.png" alt="Frontend Simplified logo" class="logo__img" width="50"/>
+        <h1 class="logo__text"><b>Frontend</b>Simplified</h1>
+      </div>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#social">Social</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="nav__item"><a href="#about">About</a></li>
+          <li class="nav__item"><a href="#social">Social</a></li>
+          <li class="nav__item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -37,11 +31,13 @@
             <div class="course__text">
               <div
                class="course__selection">
-               ----YOUR COURSE----</div>
-              <div class="course__title">Software Engineering</div>
+             ----YOUR COURSE---- </div>
+              <div
+               class="course__title">Software Engineering</div>
             </div>
           </div>
-        </div>
+         </div>
+
 
         <div class="row">
           <div class="hero">
@@ -60,20 +56,18 @@
           </div>
         </div>
       </header>
-    </section>
+    
 
     <!-- MAIN -->
-
-  <main>
-
-         <!-- ABOUT -->
-      <section id="about">
+    <main>
+      <!-- ABOUT -->
+    <section id="about">
         <div class="row about__row">
-            <div class="section __card section__card--about">
+            <div class="section__card section__card--about">
                <h1 class="section__title">About</h1>
                  <div class="section__description">
                     <div class="section__description--wraper">
-                        <p                     
+                        <p                  
                       class="section__description--para">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium at atque dignissimos laudantium, fugit commodi, recusandae voluptatum culpa sed facilis. Sed expedita ipsam velit cumque atque. Consequatur, nulla eveniet.
                         </p>
@@ -89,31 +83,66 @@
              </div>
       </section>  
 
-         <!-- ABOUT -->
+      <!-- SOCIAL -->
       <section id="social">
         <div class="row social__row">
-            <div class="section __card section__card--social">
-               <h1 class="section__title">Social</h1>
-                 <div class="section__description">
-                    <figure class="section__img--wrapper">
-                      <img src="./assets/reading.png" alt="social image">
-                    </figure>
-                    <div class="section__description--wraper">
-                        <p                     
-                      class="section__description--para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium at atque dignissimos laudantium, fugit commodi, recusandae voluptatum culpa sed facilis. Sed expedita ipsam velit cumque atque. Consequatur, nulla eveniet.
-                        </p>
-                        <p class="section__description--para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium at atque dignissimos laudantium, fugit commodi, recusandae voluptatum culpa sed facilis. Sed expedita ipsam velit cumque atque. Consequatur, nulla eveniet.
-                        </p>
-                    </div>
-                    
-                  </div>
-                </div>
-             </div>
-      </section>  
-      
+          <div class="section__card section__card--social">
+            <h1 class="section__title">Social</h1>
+            <div class="section__description">
+              <figure class="section__img--wrapper">
+                <img src="./assets/social.png" alt="2 friends making layout"/>
+              </figure>
+              <div class="section__description--wraper">
+                 <p class="section__description--para"> Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Aspernatur accusantium at atque
+                  dignissimos laudantium, fugit commodi, recusandae voluptatum
+                  culpa sed facilis. Sed expedita ipsam velit cumque atque.
+                  Consequatur, nulla eveniet.
+                 </p>
+                <p class="section__description--para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur accusantium at atque dignissimos laudantium, fugit
+                  commodi, recusandae voluptatum culpa sed facilis. Sed expedita
+                  ipsam velit cumque atque. Consequatur, nulla eveniet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="contact">
+        <div class="row contact__row">
+            <div class="section__card section___--contact">
+                <h1 class="section__title">Contact</h1>
+                <div class="section__description">
+                    <form action="">
+                      <span>Email</span>                    
+                    <input type="email" placeholder="jane@example.com">
+                    <span>Message</span>
+                    <textarea type="text" placeholder="Cool website let's get connected."></textarea>
+                    <button>Contact Us</button>
+                    </form>                
+                </div>
+            </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+         <div class="logo footer__logo">
+        <img src="./assets/fes-logo.png" alt="Frontend simplified logo" class="logo__img" width="50">
+        />
+        <h1 class="logo__text"><b>Frontend</b>Simplified</h1>
+      </div>
+      <div class="footer__links">
+        <a href="#about" class="footer__link">About</a>
+        <a href="#social" class="footer__link">Social</a>
+        <a href="#contact" class="footer__link">Contact</a>
+        <a href="#" class="footer__link">Courses</a>
+      </div>
+      <p>© 2023 Frontend Simplified</p>
+    </footer>
+  
   </body>
 </html>
